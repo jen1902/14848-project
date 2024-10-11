@@ -7,9 +7,7 @@ print("test")
 x = 2
 
 x = 0
-if x == 1:
+for i in range(3):
     pass
-print("hello world!")
-print("hello world!")
 print("hello world!")
 
