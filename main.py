@@ -1,28 +1,28 @@
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
-print("test")
+x = 2
+x = 2
+
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
+x = 2
 
 x = 2
 
