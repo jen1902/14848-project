@@ -21,12 +21,6 @@ print("hello world!")
 
 import os
 
-# Example 1: Hardcoded credentials (Security issue)
-def connect_to_database():
-    username = "admin"  # Sensitive information hardcoded
-    password = "12345"  # Weak and hardcoded password
-    print(f"Connecting with username: {username} and password: {password}")
-    # This is just an example, actual connection code is omitted
 
 # Example 2: SQL Injection vulnerability (Security issue)
 def get_user_data(user_id):
