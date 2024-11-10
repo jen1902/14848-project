@@ -9,6 +9,8 @@ x = 5
 
 x = 2
 
+
+
 x = 0
 for i in range(3):
     pass
