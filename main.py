@@ -1,4 +1,4 @@
-
+x=2
 
 # Example 2: SQL Injection vulnerability (Security issue)
 def get_user_data(user_id):
