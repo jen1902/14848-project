@@ -1,8 +1,4 @@
 
-for i in range(3):
-    pass
-print("hello world!")
-
 
 # Example 2: SQL Injection vulnerability (Security issue)
 def get_user_data(user_id):
