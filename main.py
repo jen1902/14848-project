@@ -4,11 +4,6 @@ for i in range(3):
 print("hello world!")
 
 
-
-
-import os
-
-
 # Example 2: SQL Injection vulnerability (Security issue)
 def get_user_data(user_id):
     query = f"SELECT * FROM users WHERE id = {user_id};"  # Vulnerable to SQL Injection
