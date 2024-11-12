@@ -1,30 +1,15 @@
 import sys
 import os
+from collections import defaultdict
 
-def getFp():
-    return os.environ.get("local_mr_file", "")
-
-def countTerms(line):
+# Mapper function
+for line in sys.stdin:
+    filepath = os.environ["mapreduce_map_input_file"]  # Get the file path
     words = line.strip().split()
-    wordCounts = {}
-    for w in words:
-        word = w.lower()
-        if word in wordCounts:
-            wordCounts[word] += 1
-        else:
-            wordCounts[word] = 1
-    return wordCounts
 
-def outputWordCounts(filepath, wordCounts):
-    for word, ct in wordCounts.items():
-        print(f"{word}\t{filepath}\t{ct}")
+    term_counts = defaultdict(int)
+    for word in words:
+        term_counts[word.lower()] += 1
 
-def mapper():
-    fp = getFp()
-    for line in sys.stdin:
-        wordCounts = countTerms(line)
-        outputWordCounts(fp, wordCounts)
-
-# Run mapper
-if __name__ == "__main__":
-    mapper()
+    for term, count in term_counts.items():
+        print(f"{term}\t{filepath}\t{count}")
