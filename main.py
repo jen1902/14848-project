@@ -12,8 +12,7 @@ def process_data(data):
         result = "Data is four"
     elif data == 5:
         result = "Data is five"
-    elif data == 6:
-        result = "Data is six"
+
     elif data == 7:
         result = "Data is seven"
     else:
