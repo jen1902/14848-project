@@ -1,10 +1,10 @@
 import sys
 import os
 
-def getFp():
+def get_file():
     return os.environ.get("local_mr_file", "")
 
-def countTerms(line):
+def ct_terms(line):
     words = line.strip().split()
     wordCounts = {}
     for w in words:
@@ -15,15 +15,15 @@ def countTerms(line):
             wordCounts[word] = 1
     return wordCounts
 
-def outputWordCounts(filepath, wordCounts):
+def word_ct_output(filepath, wordCounts):
     for word, ct in wordCounts.items():
         print(f"{word}\t{filepath}\t{ct}")
 
 def mapper():
-    fp = getFp()
+    fp = get_file()
     for line in sys.stdin:
-        wordCounts = countTerms(line)
-        outputWordCounts(fp, wordCounts)
+        wordCounts = ct_terms(line)
+        word_ct_output(fp, wordCounts)
 
 # Run mapper
 if __name__ == "__main__":
