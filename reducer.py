@@ -1,8 +1,6 @@
 import sys
 from collections import defaultdict
 
-
-
 def parse(line):
     word, fp, ct = line.strip().split("\t")
     return word, fp, int(ct)
