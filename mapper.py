@@ -4,7 +4,6 @@ import os
 def get_file():
     return os.environ.get("local_mr_file", "")
 
-
 def ct_terms(line):
     words = line.strip().split()
     word_ct = {}
