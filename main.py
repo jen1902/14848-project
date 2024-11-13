@@ -1,11 +1,5 @@
 
 
-# Example 2: SQL Injection vulnerability (Security issue)
-def get_user_data(user_id):
-    query = f"SELECT * FROM users WHERE id = {user_id};"  # Vulnerable to SQL Injection
-    print("Executing query:", query)
-    # Database execution code is omitted for simplicity
-
 # Example 3: Function with high complexity (Code Smell)
 def process_data(data):
     if data == 1:
